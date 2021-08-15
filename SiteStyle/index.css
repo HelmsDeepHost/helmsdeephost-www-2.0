@@ -3,4 +3,23 @@
     StopDogeHate.org Homepage Style Settings
 */
 
-/* Homepage Header */
+/* Main Content */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#indexLeftCol {
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 683px) { /*sets the min-width for the title because im using vw */
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+    #indexRightCol {
+        margin: 0 auto;
+    }
+}
