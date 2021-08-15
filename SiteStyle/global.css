@@ -4,11 +4,11 @@
 */
 
 /* General Content */
-
 body {
     min-width:683px;
     
-    background-color: white;
+    background: url("../Images/dogebackgroundsection.jpg");
+    background-size: 100%;
     color: white;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     padding: 0;
@@ -17,19 +17,36 @@ body {
 
 main {
     
-    position: absolute;
-    top: 100%;
+     position: relative;
+    top: 90vh;
     left: 0;
-    right: 0;
+    right: 0; 
     margin: 0 auto;
     width: 90%;
 /*    height: 100px;*/
 
+    padding: 20px;
     background-color: white;
     color: black;
-    text-align: center;
+/*    text-align: center;*/
 }
 
+h3 {
+    font-size:150%;
+    text-decoration: underline;
+}
+
+p {
+    font-size:125%;
+}
+
+ol {
+    margin: 20px;
+}
+
+li {
+    font-size:200%;
+}
 /* Page Header and Navbar*/
 header {
     min-width:648px;
@@ -63,13 +80,13 @@ nav {
     justify-content: center;
     width: 100%;
 }
-a {
+nav a {
     text-decoration: none;
     position: relative;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
-a:before {
+nav a:before {
   color:white;
   content: "";
   position: absolute;
@@ -82,15 +99,19 @@ a:before {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
-a:hover:before {
+nav a:hover:before {
   color:white;
   visibility: visible;
   transform: scaleX(1);
 }
-a:visited {
+nav a:visited {
     color:white;
 }
-/* sliedshow */
-#slideShow img {
-    width:100%;
+/* background */
+#background-top {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top:0;
 }
